@@ -1,0 +1,136 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="OurSMS.Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+
+    <%--<title><%: Page.Title %> - Our SMS</title>--%>
+    <meta charset="uft-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 60%;
+            margin: auto;
+        }
+    </style>
+
+
+    <meta name="description" content="School Management System" />
+    <meta name="John Cochrane" content="Sree" />
+    <!-- Bootstrap Core Css -->
+    <link href="Content/css/bootstrap.css" rel="stylesheet" />
+    <link href="Content/css/signin.css" rel="stylesheet" />
+    <link href="carousel.css" rel="stylesheet" />
+    <link href="navbar.css" rel="stylesheet" />
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" runat="server" href="~/Navigation/Login.aspx">Our School Management System</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a runat="server" href="~/Navigation/Login.aspx">My Account</a></li>
+                    
+                    
+                    
+                        <%-- <asp:LoginView runat="server">
+                        <anonymoustemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/Login">Log in</a></li>
+                            </ul>
+                        </anonymoustemplate>
+                        <loggedintemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.Name  %> !</a></li>
+                                <li>
+                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                </li>
+                            </ul>
+                        </loggedintemplate>
+                    </asp:LoginView>--%>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <asp:ContentPlaceHolder ID="StyleSection" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <!--Static navbar-->
+            <%-- <div class="navbar navbar-default"></div> --%>
+            <!--Content Page Section-->
+            <div class="container">
+                <asp:ContentPlaceHolder ID="ContentSection" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <!--/container -->
+        <%-- Script Section --%>
+        <script src="scripts/jquery-3.1.1.js"></script>
+        <script src="scripts/bootstrap.js"></script>
+        <asp:ContentPlaceHolder ID="ScriptSection" runat="server"></asp:ContentPlaceHolder>
+        <%--</form>--%>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <ul class="nav navbar-nav">
+                    <li><a runat="server" href="~/FooterLinks/Cookies">Cookies</a></li>
+                    <li><a runat="server" href="~/FooterLinks/Privacy">Privacy Policy</a></li>
+                    <li><a runat="server" href="~/FooterLinks/Legal">Legal</a></li>
+                </ul>
+                <br />
+                <p>&copy; <%: DateTime.Now.Year %> - Our School Management System Ltd. All rights reserve. Ulster University</p>
+
+            </footer>
+        </div>
+    </form>
+
+    <script>//this is the script for the image carousel
+        $(document).ready(function () {
+            // Activate Carousel
+            $("#myCarousel").carousel();
+
+            // Enable Carousel Indicators
+            $(".item1").click(function () {
+                $("#myCarousel").carousel(0);
+            });
+            $(".item2").click(function () {
+                $("#myCarousel").carousel(1);
+            });
+            $(".item3").click(function () {
+                $("#myCarousel").carousel(2);
+            });
+            $(".item4").click(function () {
+                $("#myCarousel").carousel(3);
+            });
+
+            // Enable Carousel Controls
+            $(".left").click(function () {
+                $("#myCarousel").carousel("prev");
+            });
+            $(".right").click(function () {
+                $("#myCarousel").carousel("next");
+            });
+        });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ff05edd1bb074c17a32cab1bbc6d48b2" Name="Diagram1">
+        <EntityTypeShape EntityType="OurSMSModelNew2.Address" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OurSMSModelNew2.Attendance" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OurSMSModelNew2.Classroom" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="OurSMSModelNew2.ClassroomType" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OurSMSModelNew2.Staff" Width="1.5" PointX="4.75" PointY="2.75" />
+        <EntityTypeShape EntityType="OurSMSModelNew2.Staff_User" Width="1.5" PointX="4.75" PointY="5.75" />
+        <EntityTypeShape EntityType="OurSMSModelNew2.Student_Address" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OurSMSModelNew2.Student_Tag" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="OurSMSModelNew2.Student_tbl" Width="1.5" PointX="6.75" PointY="3.75" />
+        <EntityTypeShape EntityType="OurSMSModelNew2.StudentUser" Width="1.5" PointX="6.75" PointY="7.75" />
+        <EntityTypeShape EntityType="OurSMSModelNew2.Subject" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OurSMSModelNew2.SubjectType" Width="1.5" PointX="2.75" PointY="8.75" />
+        <EntityTypeShape EntityType="OurSMSModelNew2.Tag" Width="1.5" PointX="8.75" PointY="3.75" />
+        <EntityTypeShape EntityType="OurSMSModelNew2.User" Width="1.5" PointX="8.75" PointY="6.75" />
+        <EntityTypeShape EntityType="OurSMSModelNew2.WeeklySchedule" Width="1.5" PointX="8.75" PointY="9.75" />
+        <EntityTypeShape EntityType="OurSMSModelNew2.YearGroup" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="OurSMSModelNew2.Student_Subject" Width="1.5" PointX="10.75" PointY="3.75" />
+        <EntityTypeShape EntityType="OurSMSModelNew2.TimeSlot" Width="1.5" PointX="4.75" PointY="10.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
